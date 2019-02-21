@@ -10,10 +10,13 @@ import Foundation
 import UIKit
 
 class ListRouter: ListRouterProtocol {
+    var viewController: UIViewController!
+    
     static func assembleComponent() -> UIViewController {
         let presenter = ListPresenter()
         let interactor = ListGenerator()
         let repository = MovieRepository()
+        let router = ListRouter()
         
         let storyboard = UIStoryboard(name: "ListView", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "ListView") as! ListView
@@ -22,20 +25,21 @@ class ListRouter: ListRouterProtocol {
         
         presenter.view = viewController
         presenter.interactor = interactor
-        presenter.router = ListRouter()
+        presenter.router = router
         presenter.showMovieList()
         
         
         viewController.presenter = presenter
         
         let navigation = UINavigationController(rootViewController: viewController)
+        router.viewController = navigation
         
         return navigation
     }
     
     func presentDetail(movie: ListResponse) {
-        RootRouter.pushViewController(vc: DetailRouter.assembleModule())
-        
+        let detailRouter = DetailRouter.assembleModule()
+        viewController.present(detailRouter, animated: true, completion: nil)
     }
     
 }

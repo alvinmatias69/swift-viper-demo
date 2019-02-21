@@ -10,4 +10,5 @@ import Foundation
 
 protocol DetailPresenterProtocol {
     func showMovie(id: String)
+    func resetToList()
 }

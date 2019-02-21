@@ -9,7 +9,9 @@
 import UIKit
 
 class DetailView: UIViewController {
-    @IBOutlet weak var NameLabel: UILabel!
+    var presenter: DetailPresenterProtocol!
+    
+    @IBOutlet weak var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +29,18 @@ class DetailView: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func pressBack(_ sender: Any) {
+        self.resetToList()
+    }
+    
 }
 
 extension DetailView: DetailViewProtocol {
+    func resetToList() {
+        self.presenter.resetToList()
+    }
+    
     func updateMovieDescription(movie: DetailResp) {
-        NameLabel.text = movie.name
+        
     }
 }

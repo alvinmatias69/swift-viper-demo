@@ -10,4 +10,5 @@ import Foundation
 
 protocol DetailViewProtocol {
     func updateMovieDescription(movie: DetailResp)
+    func resetToList()
 }

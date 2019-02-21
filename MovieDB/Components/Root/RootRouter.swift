@@ -9,16 +9,16 @@
 import UIKit
 
 class RootRouter {
-    static var rootViewController: UIViewController!;
+    static var window: UIWindow!
     
     static func presentMovieListScreen(in window: UIWindow) {
         window.makeKeyAndVisible()
         let viewController = ListRouter.assembleComponent()
         window.rootViewController = viewController
-        rootViewController = viewController
+        self.window = window
     }
     
-    static func pushViewController(vc: UIViewController) {
-        rootViewController.navigationController?.pushViewController(vc, animated: true)
+    static func resetScreen(screen: UIViewController) {
+        window.rootViewController = screen
     }
 }
