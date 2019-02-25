@@ -9,6 +9,7 @@
 import Foundation
 
 struct ListResponse {
+    let id: Int
     let date: String
     let name: String
     let rating: Float

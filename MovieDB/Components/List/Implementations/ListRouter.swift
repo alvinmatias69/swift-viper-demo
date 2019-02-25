@@ -38,7 +38,7 @@ class ListRouter: ListRouterProtocol {
     }
     
     func presentDetail(movie: ListResponse) {
-        let detailRouter = DetailRouter.assembleModule()
+        let detailRouter = DetailRouter.assembleModule(id: String(movie.id))
         viewController.present(detailRouter, animated: true, completion: nil)
     }
     

@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 protocol DetailRouterProtocol {
-    static func assembleModule() -> UIViewController
+    static func assembleModule(id: String) -> UIViewController
     func navigateToList()
 }
