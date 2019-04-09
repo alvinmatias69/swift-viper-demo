@@ -7,9 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class MovieRepository {
     let movieNetwork = MovieNetworkManager()
+    var movieStorages = MovieStorages()
+    
+    init() {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        let persistentContainer = appDelegate!.persistentContainer
+        movieStorages.persistentContainer = persistentContainer
+    }
 }
 
 extension MovieRepository: ListRepositoryProtocol {

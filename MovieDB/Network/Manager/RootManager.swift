@@ -18,7 +18,7 @@ enum NetworkResponse : String {
     case unableToDecode = "We could not decode the response."
 }
 
-enum Result<String> {
+enum Results<String> {
     case success
     case failure(String)
 }
@@ -26,7 +26,7 @@ enum Result<String> {
 class RootManager {
     static let MovieAPIKey = "82eb971347b9a2ca2847f59a68b27d6c"
     
-    func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<String> {
+    func handleNetworkResponse(_ response: HTTPURLResponse) -> Results<String> {
         switch response.statusCode {
         case 200...299:
             return .success

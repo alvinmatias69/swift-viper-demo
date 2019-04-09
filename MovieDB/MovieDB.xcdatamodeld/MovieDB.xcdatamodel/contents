@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MovieStore" representedClassName="MovieStore" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="rating" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MovieStore" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
