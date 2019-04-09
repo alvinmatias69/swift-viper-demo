@@ -14,8 +14,13 @@ class ListPresenter: ListPresenterProtocol {
     var router: ListRouterProtocol!
     
     func showMovieList() {
-        let movieList = interactor.get()
-        view.populateMovieList(movieList: movieList)
+        let dispatchQueue = DispatchQueue(label: "get movie", qos: .background)
+        dispatchQueue.async {
+            let movieList = self.interactor.get()
+            DispatchQueue.main.async {
+                self.view.populateMovieList(movieList: movieList)
+            }
+        }
     }
     
     func selectMovie(movie: ListResponse) {

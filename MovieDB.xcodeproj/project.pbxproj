@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400C501722244FCC0002C7F6 /* DetailRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C501622244FCC0002C7F6 /* DetailRepositoryProtocol.swift */; };
 		4015BAA72208390C0091011F /* CobaListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4015BAA52208390C0091011F /* CobaListView.storyboard */; };
+		4016BB362223CA55000E974C /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB352223CA55000E974C /* HTTPTask.swift */; };
+		4016BB382223CCA1000E974C /* ParameterEncoderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB372223CCA1000E974C /* ParameterEncoderProtocol.swift */; };
+		4016BB3B2223CDE0000E974C /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB3A2223CDE0000E974C /* ParameterEncoding.swift */; };
+		4016BB3D2223D361000E974C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB3C2223D361000E974C /* URLParameterEncoder.swift */; };
+		4016BB3F2223D5FD000E974C /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB3E2223D5FD000E974C /* JSONParameterEncoder.swift */; };
+		4016BB412223D748000E974C /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB402223D748000E974C /* NetworkRouter.swift */; };
+		4016BB432223DB19000E974C /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB422223DB19000E974C /* EndPointType.swift */; };
+		4016BB462223F997000E974C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB452223F997000E974C /* Router.swift */; };
+		4016BB492224166C000E974C /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB482224166C000E974C /* MovieEndPoint.swift */; };
+		4016BB4B222419C6000E974C /* RootManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB4A222419C6000E974C /* RootManager.swift */; };
+		4016BB4D22241DDF000E974C /* MovieNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4016BB4C22241DDF000E974C /* MovieNetworkManager.swift */; };
 		40213D3222075203002CB0FE /* DetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40213D3122075203002CB0FE /* DetailInteractorProtocol.swift */; };
 		40213D34220753CE002CB0FE /* DetailResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40213D33220753CE002CB0FE /* DetailResp.swift */; };
 		40213D362207544A002CB0FE /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40213D352207544A002CB0FE /* DetailInteractor.swift */; };
@@ -24,19 +36,24 @@
 		40335B3E21FDDA4500075CE3 /* ListRequesterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40335B3D21FDDA4500075CE3 /* ListRequesterProtocol.swift */; };
 		40335B4021FDDC0A00075CE3 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40335B3F21FDDC0A00075CE3 /* ListResponse.swift */; };
 		40335B4221FDDDB100075CE3 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40335B4121FDDDB100075CE3 /* ListInteractor.swift */; };
-		40335B4821FDE07000075CE3 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40335B4721FDE07000075CE3 /* Interface.swift */; };
 		40335B4B21FDF99000075CE3 /* ListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40335B4A21FDF99000075CE3 /* ListPresenterProtocol.swift */; };
 		40335B4D21FDFC0500075CE3 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40335B4C21FDFC0500075CE3 /* ListPresenter.swift */; };
+		4052974E2221BD81002B98AC /* ListRepositoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052974D2221BD81002B98AC /* ListRepositoriesProtocol.swift */; };
 		40620CFE2205B38B00F9BB9A /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40620CFD2205B38B00F9BB9A /* RootRouter.swift */; };
 		40620D002205B8E200F9BB9A /* ListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40620CFF2205B8E100F9BB9A /* ListView.storyboard */; };
 		40620D022205C7FD00F9BB9A /* ListRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40620D012205C7FD00F9BB9A /* ListRouterProtocol.swift */; };
 		40620D052205CBB900F9BB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40620D032205CBB800F9BB9A /* Main.storyboard */; };
 		40620D0C2205D14000F9BB9A /* DetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40620D0B2205D14000F9BB9A /* DetailViewProtocol.swift */; };
 		40620D0E2205D34000F9BB9A /* DetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40620D0D2205D34000F9BB9A /* DetailPresenterProtocol.swift */; };
+		406F359A225B4A0200216D60 /* NSPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F3599225B4A0200216D60 /* NSPersistentContainer.swift */; };
+		406F359D225B529100216D60 /* MovieDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 406F359B225B529100216D60 /* MovieDB.xcdatamodeld */; };
+		406F359F225B56A200216D60 /* MovieStorages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F359E225B56A200216D60 /* MovieStorages.swift */; };
 		40E942242200A51700F1A186 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E942232200A51700F1A186 /* ListView.swift */; };
+		40EDE822225CFAC300D18B06 /* MainStorages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EDE821225CFAC300D18B06 /* MainStorages.swift */; };
 		40EE414C21FF1D7E00B1A782 /* ListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE414B21FF1D7E00B1A782 /* ListViewProtocol.swift */; };
 		40EE415021FF273900B1A782 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE414F21FF273900B1A782 /* ListRouter.swift */; };
-		40EE415221FF28B200B1A782 /* Implementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE415121FF28B200B1A782 /* Implementation.swift */; };
+		40EE415221FF28B200B1A782 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE415121FF28B200B1A782 /* MovieRepository.swift */; };
+		40FD6C4722232D2A00FC140C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FD6C4622232D2A00FC140C /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +67,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		400C501622244FCC0002C7F6 /* DetailRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepositoryProtocol.swift; sourceTree = "<group>"; };
 		4015BAA62208390C0091011F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MovieDB/Base.lproj/CobaListView.storyboard; sourceTree = "<group>"; };
+		4016BB352223CA55000E974C /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		4016BB372223CCA1000E974C /* ParameterEncoderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoderProtocol.swift; sourceTree = "<group>"; };
+		4016BB3A2223CDE0000E974C /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		4016BB3C2223D361000E974C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		4016BB3E2223D5FD000E974C /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		4016BB402223D748000E974C /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		4016BB422223DB19000E974C /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		4016BB452223F997000E974C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4016BB482224166C000E974C /* MovieEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		4016BB4A222419C6000E974C /* RootManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootManager.swift; sourceTree = "<group>"; };
+		4016BB4C22241DDF000E974C /* MovieNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworkManager.swift; sourceTree = "<group>"; };
 		40213D3122075203002CB0FE /* DetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractorProtocol.swift; sourceTree = "<group>"; };
 		40213D33220753CE002CB0FE /* DetailResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResp.swift; sourceTree = "<group>"; };
 		40213D352207544A002CB0FE /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
@@ -71,19 +100,24 @@
 		40335B3D21FDDA4500075CE3 /* ListRequesterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRequesterProtocol.swift; sourceTree = "<group>"; };
 		40335B3F21FDDC0A00075CE3 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
 		40335B4121FDDDB100075CE3 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
-		40335B4721FDE07000075CE3 /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
 		40335B4A21FDF99000075CE3 /* ListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterProtocol.swift; sourceTree = "<group>"; };
 		40335B4C21FDFC0500075CE3 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		4052974D2221BD81002B98AC /* ListRepositoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesProtocol.swift; sourceTree = "<group>"; };
 		40620CFD2205B38B00F9BB9A /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		40620CFF2205B8E100F9BB9A /* ListView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListView.storyboard; sourceTree = "<group>"; };
 		40620D012205C7FD00F9BB9A /* ListRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterProtocol.swift; sourceTree = "<group>"; };
 		40620D042205CBB800F9BB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40620D0B2205D14000F9BB9A /* DetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProtocol.swift; sourceTree = "<group>"; };
 		40620D0D2205D34000F9BB9A /* DetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		406F3599225B4A0200216D60 /* NSPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPersistentContainer.swift; sourceTree = "<group>"; };
+		406F359C225B529100216D60 /* MovieDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieDB.xcdatamodel; sourceTree = "<group>"; };
+		406F359E225B56A200216D60 /* MovieStorages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStorages.swift; sourceTree = "<group>"; };
 		40E942232200A51700F1A186 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		40EDE821225CFAC300D18B06 /* MainStorages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorages.swift; sourceTree = "<group>"; };
 		40EE414B21FF1D7E00B1A782 /* ListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewProtocol.swift; sourceTree = "<group>"; };
 		40EE414F21FF273900B1A782 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		40EE415121FF28B200B1A782 /* Implementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implementation.swift; sourceTree = "<group>"; };
+		40EE415121FF28B200B1A782 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		40FD6C4622232D2A00FC140C /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +138,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4016BB392223CDD3000E974C /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				4016BB3A2223CDE0000E974C /* ParameterEncoding.swift */,
+				4016BB3C2223D361000E974C /* URLParameterEncoder.swift */,
+				4016BB3E2223D5FD000E974C /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		4016BB442223F982000E974C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4016BB452223F997000E974C /* Router.swift */,
+				4016BB4A222419C6000E974C /* RootManager.swift */,
+				4016BB4C22241DDF000E974C /* MovieNetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4016BB4722241656000E974C /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				4016BB482224166C000E974C /* MovieEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
 		40335B0B21FDD5D000075CE3 = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +188,17 @@
 		40335B1621FDD5D000075CE3 /* MovieDB */ = {
 			isa = PBXGroup;
 			children = (
+				40FD6C4422232CB100FC140C /* Network */,
+				406F3597225B400C00216D60 /* Storages */,
 				40335B4421FDE00E00075CE3 /* Repositories */,
 				40335B3721FDD63B00075CE3 /* Components */,
+				406F3598225B49DE00216D60 /* Extensions */,
 				40EE414B21FF1D7E00B1A782 /* ListViewProtocol.swift */,
 				40335B1721FDD5D000075CE3 /* AppDelegate.swift */,
 				40335B1E21FDD5D100075CE3 /* Assets.xcassets */,
 				40335B2021FDD5D100075CE3 /* LaunchScreen.storyboard */,
 				40335B2321FDD5D100075CE3 /* Info.plist */,
+				406F359B225B529100216D60 /* MovieDB.xcdatamodeld */,
 				40620D032205CBB800F9BB9A /* Main.storyboard */,
 			);
 			path = MovieDB;
@@ -173,6 +239,7 @@
 				40335B3F21FDDC0A00075CE3 /* ListResponse.swift */,
 				40335B4A21FDF99000075CE3 /* ListPresenterProtocol.swift */,
 				40620D012205C7FD00F9BB9A /* ListRouterProtocol.swift */,
+				4052974D2221BD81002B98AC /* ListRepositoriesProtocol.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -201,8 +268,7 @@
 		40335B4521FDE02800075CE3 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				40335B4721FDE07000075CE3 /* Interface.swift */,
-				40EE415121FF28B200B1A782 /* Implementation.swift */,
+				40EE415121FF28B200B1A782 /* MovieRepository.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -232,6 +298,7 @@
 				40213D3122075203002CB0FE /* DetailInteractorProtocol.swift */,
 				40213D33220753CE002CB0FE /* DetailResp.swift */,
 				40213D3D220760D6002CB0FE /* DetailRouterProtocol.swift */,
+				400C501622244FCC0002C7F6 /* DetailRepositoryProtocol.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -246,6 +313,46 @@
 				40213D3F22076151002CB0FE /* DetailRouter.swift */,
 			);
 			path = Implementations;
+			sourceTree = "<group>";
+		};
+		406F3597225B400C00216D60 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				406F359E225B56A200216D60 /* MovieStorages.swift */,
+				40EDE821225CFAC300D18B06 /* MainStorages.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		406F3598225B49DE00216D60 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				406F3599225B4A0200216D60 /* NSPersistentContainer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40FD6C4422232CB100FC140C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4016BB4722241656000E974C /* EndPoint */,
+				4016BB442223F982000E974C /* Manager */,
+				4016BB392223CDD3000E974C /* Encoding */,
+				40FD6C4522232CDD00FC140C /* Interfaces */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40FD6C4522232CDD00FC140C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				40FD6C4622232D2A00FC140C /* HTTPMethod.swift */,
+				4016BB352223CA55000E974C /* HTTPTask.swift */,
+				4016BB372223CCA1000E974C /* ParameterEncoderProtocol.swift */,
+				4016BB402223D748000E974C /* NetworkRouter.swift */,
+				4016BB422223DB19000E974C /* EndPointType.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +405,11 @@
 				TargetAttributes = {
 					40335B1321FDD5D000075CE3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					40335B2721FDD5D100075CE3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 40335B1321FDD5D000075CE3;
 					};
 				};
@@ -352,28 +461,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40EE415221FF28B200B1A782 /* Implementation.swift in Sources */,
+				400C501722244FCC0002C7F6 /* DetailRepositoryProtocol.swift in Sources */,
+				40EE415221FF28B200B1A782 /* MovieRepository.swift in Sources */,
 				40E942242200A51700F1A186 /* ListView.swift in Sources */,
 				40EE415021FF273900B1A782 /* ListRouter.swift in Sources */,
 				40213D3822075DD7002CB0FE /* DetailPresenter.swift in Sources */,
+				4016BB492224166C000E974C /* MovieEndPoint.swift in Sources */,
+				406F359A225B4A0200216D60 /* NSPersistentContainer.swift in Sources */,
 				40620CFE2205B38B00F9BB9A /* RootRouter.swift in Sources */,
+				4016BB432223DB19000E974C /* EndPointType.swift in Sources */,
 				40620D0C2205D14000F9BB9A /* DetailViewProtocol.swift in Sources */,
 				40620D0E2205D34000F9BB9A /* DetailPresenterProtocol.swift in Sources */,
 				40335B4D21FDFC0500075CE3 /* ListPresenter.swift in Sources */,
+				4016BB4D22241DDF000E974C /* MovieNetworkManager.swift in Sources */,
+				4016BB3D2223D361000E974C /* URLParameterEncoder.swift in Sources */,
+				4016BB462223F997000E974C /* Router.swift in Sources */,
 				40213D362207544A002CB0FE /* DetailInteractor.swift in Sources */,
 				40213D3E220760D6002CB0FE /* DetailRouterProtocol.swift in Sources */,
+				40FD6C4722232D2A00FC140C /* HTTPMethod.swift in Sources */,
+				406F359F225B56A200216D60 /* MovieStorages.swift in Sources */,
 				40335B4221FDDDB100075CE3 /* ListInteractor.swift in Sources */,
+				4016BB382223CCA1000E974C /* ParameterEncoderProtocol.swift in Sources */,
+				4016BB362223CA55000E974C /* HTTPTask.swift in Sources */,
 				40213D3C22075F4A002CB0FE /* DetailView.swift in Sources */,
 				40335B4021FDDC0A00075CE3 /* ListResponse.swift in Sources */,
 				40213D4022076151002CB0FE /* DetailRouter.swift in Sources */,
 				40335B4B21FDF99000075CE3 /* ListPresenterProtocol.swift in Sources */,
+				40EDE822225CFAC300D18B06 /* MainStorages.swift in Sources */,
+				4052974E2221BD81002B98AC /* ListRepositoriesProtocol.swift in Sources */,
+				4016BB4B222419C6000E974C /* RootManager.swift in Sources */,
+				4016BB3F2223D5FD000E974C /* JSONParameterEncoder.swift in Sources */,
+				4016BB3B2223CDE0000E974C /* ParameterEncoding.swift in Sources */,
 				40213D34220753CE002CB0FE /* DetailResp.swift in Sources */,
 				40EE414C21FF1D7E00B1A782 /* ListViewProtocol.swift in Sources */,
 				40213D3222075203002CB0FE /* DetailInteractorProtocol.swift in Sources */,
-				40335B4821FDE07000075CE3 /* Interface.swift in Sources */,
+				4016BB412223D748000E974C /* NetworkRouter.swift in Sources */,
 				40620D022205C7FD00F9BB9A /* ListRouterProtocol.swift in Sources */,
 				40335B1821FDD5D000075CE3 /* AppDelegate.swift in Sources */,
 				40335B3E21FDDA4500075CE3 /* ListRequesterProtocol.swift in Sources */,
+				406F359D225B529100216D60 /* MovieDB.xcdatamodeld in Sources */,
 				40335B3C21FDD92800075CE3 /* MovieEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,7 +679,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myabuy.MovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -571,7 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myabuy.MovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -591,7 +717,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myabuy.MovieDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieDB.app/MovieDB";
 			};
@@ -612,7 +738,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myabuy.MovieDBTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieDB.app/MovieDB";
 			};
@@ -649,6 +775,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		406F359B225B529100216D60 /* MovieDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				406F359C225B529100216D60 /* MovieDB.xcdatamodel */,
+			);
+			currentVersion = 406F359C225B529100216D60 /* MovieDB.xcdatamodel */;
+			path = MovieDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 40335B0C21FDD5D000075CE3 /* Project object */;
 }

@@ -9,11 +9,19 @@
 import Foundation
 
 class DetailInteractor: DetailInteractorProtocol {
-    var repository: MovieRepositoryProtocol!
+    var repository: DetailRepositoriesProtocol!
     
     func getMovie(id: String) -> DetailResp {
-        let movie = repository.get(id: id)
-        let dateFormatter = DateFormatter()
-        return DetailResp(date: dateFormatter.string(from: movie.date), name: movie.name, rating: movie.rating, description: id)
+        var response: DetailResp? = nil
+        
+        do {
+            let movie = try repository.get(id: Int(id)!)
+            let dateFormatter = DateFormatter()
+            response = DetailResp(date: dateFormatter.string(from: movie.date), name: movie.name, rating: movie.rating, description: id)
+        } catch {
+            print("error: \(error)")
+        }
+        
+        return response!
     }
 }

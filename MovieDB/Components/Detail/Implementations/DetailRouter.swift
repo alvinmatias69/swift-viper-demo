@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class DetailRouter: DetailRouterProtocol {
-    static func assembleModule() -> UIViewController {
+    static func assembleModule(id: String) -> UIViewController {
         let repository = MovieRepository()
         let interactor = DetailInteractor()
         let presenter = DetailPresenter()
@@ -26,6 +26,8 @@ class DetailRouter: DetailRouterProtocol {
         presenter.router = router
         
         viewController.presenter = presenter
+        
+        presenter.showMovie(id: id)
         
         return viewController
     }

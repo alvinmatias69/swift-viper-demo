@@ -9,12 +9,15 @@
 import Foundation
 
 class ListGenerator: ListRequesterProtocol {
-    var repository: MovieRepositoryProtocol!
+    var repository: ListRepositoryProtocol!
     
     func get() -> Array<ListResponse> {
-        let movies: Array<ListResponse> = repository.getList().map { (movie) -> ListResponse in
-            let dateFormatter = DateFormatter()
-            return ListResponse(date: dateFormatter.string(from: movie.date), name: movie.name, rating: movie.rating, description: movie.description)
+        var movies: Array<ListResponse> = []
+        if let repositoryMovies = try? repository.getList() {
+            movies = repositoryMovies.map { (movie) -> ListResponse in
+                let dateFormatter = DateFormatter()
+                return ListResponse(id: movie.id, date: dateFormatter.string(from: movie.date), name: movie.name, rating: movie.rating, description: movie.description)
+            }
         }
         return movies
     }

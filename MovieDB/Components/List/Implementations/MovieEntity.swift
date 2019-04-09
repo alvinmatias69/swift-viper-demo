@@ -9,6 +9,7 @@
 import Foundation
 
 struct Movie {
+    let id: Int
     let date: Date
     let name: String
     let rating: Float

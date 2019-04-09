@@ -14,8 +14,12 @@ class DetailPresenter: DetailPresenterProtocol {
     var router: DetailRouterProtocol!
     
     func showMovie(id: String) {
-        let movie = interactor.getMovie(id: id)
-        view.updateMovieDescription(movie: movie)
+        let dispatchQueue = DispatchQueue(label: "get movie detail", qos: .background)
+        
+        dispatchQueue.async {
+            let movie = self.interactor.getMovie(id: id)
+            self.view.updateMovieDescription(movie: movie)
+        }
     }
     
     func resetToList() {
